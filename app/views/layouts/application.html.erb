@@ -11,6 +11,15 @@
   </head>
 
   <body>
+   <header>
+    <%= image_tag("logo")%>
+    </header>
     <%= yield %>
+    <footer>
+      <p>
+        Copyright &copy; <%= Time.now.year %>
+        <%= link_to "Tyler Rhodes", "https://tyler-rhodes-portfolio.herokuapp.com/" %>
+      </p>
+  </footer>
   </body>
 </html>
